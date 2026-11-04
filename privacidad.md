@@ -1,12 +1,12 @@
 # Política de Privacidad
 
-**Última actualización:** 04 de noviembre de 2026
+**Última actualización: 4 de noviembre de 2026**
 
-Gracias por utilizar nuestra aplicación DominiTV. La privacidad de nuestros usuarios es importante para nosotros. Esta Política de Privacidad explica qué información puede recopilar la aplicación, cómo se utiliza y qué servicios de terceros participan en su funcionamiento.
+Gracias por utilizar **DominiTV** (en adelante, "la aplicación"). La privacidad de nuestros usuarios es importante para nosotros. Esta Política de Privacidad explica qué información puede recopilar la aplicación, cómo se utiliza y qué servicios de terceros participan en su funcionamiento.
 
 ## 1. Información que recopilamos
 
-Nuestra aplicación no solicita ni recopila directamente información personal, como nombre, dirección, correo electrónico, número telefónico o documentos de identidad.
+DominiTV no solicita ni recopila directamente información personal, como nombre, dirección, correo electrónico, número telefónico o documentos de identidad.
 
 Sin embargo, utilizamos servicios proporcionados por terceros que pueden recopilar determinada información de forma automática para ofrecer sus servicios correctamente.
 
@@ -24,7 +24,7 @@ Esta información puede incluir:
 
 ## 2. Publicidad
 
-Nuestra aplicación utiliza Google AdMob para mostrar anuncios.
+La aplicación utiliza **Google AdMob** para mostrar anuncios.
 
 Google AdMob puede recopilar y procesar información del dispositivo con el fin de:
 
@@ -48,11 +48,11 @@ La aplicación únicamente solicita los permisos necesarios para su correcto fun
 
 Dependiendo de la versión de la aplicación y del dispositivo, estos permisos pueden incluir acceso a Internet y otros permisos técnicos necesarios para reproducir contenido multimedia o mostrar anuncios.
 
-La aplicación no accede a contactos, mensajes, fotografías, archivos personales, micrófono o cámara, salvo que una futura actualización lo indique expresamente.
+La aplicación no accede a contactos, mensajes, fotografías, archivos personales, micrófono ni cámara, salvo que una futura actualización lo indique expresamente.
 
 ## 4. Contenido de terceros
 
-Nuestra aplicación permite visualizar contenido transmitido por proveedores externos mediante enlaces públicos disponibles en Internet.
+La aplicación permite visualizar contenido transmitido por proveedores externos mediante enlaces públicos disponibles en Internet.
 
 No somos propietarios del contenido transmitido ni controlamos su disponibilidad, calidad o continuidad del servicio.
 
@@ -74,7 +74,7 @@ Sin embargo, ningún método de transmisión por Internet o almacenamiento elect
 
 ## 7. Privacidad de menores
 
-Nuestra aplicación no está dirigida a menores de 13 años.
+La aplicación no está dirigida a menores de 13 años.
 
 No recopilamos intencionalmente información personal de menores. Si un padre, madre o tutor considera que un menor ha proporcionado información personal, puede comunicarse con nosotros para que tomemos las medidas correspondientes.
 
@@ -90,4 +90,4 @@ El uso continuado de la aplicación después de dichos cambios implica la acepta
 
 Si tienes preguntas, comentarios o sugerencias acerca de esta Política de Privacidad, puedes comunicarte con nosotros mediante el siguiente correo electrónico:
 
-**nestvbc@gmail.com**
+**einelcastillo@gmail.com**
