@@ -2,7 +2,7 @@
 
 **Última actualización:** 04 de noviembre de 2026
 
-Gracias por utilizar nuestra aplicación de TV en vivo. La privacidad de nuestros usuarios es importante para nosotros. Esta Política de Privacidad explica qué información puede recopilar la aplicación, cómo se utiliza y qué servicios de terceros participan en su funcionamiento.
+Gracias por utilizar nuestra aplicación DominiTV. La privacidad de nuestros usuarios es importante para nosotros. Esta Política de Privacidad explica qué información puede recopilar la aplicación, cómo se utiliza y qué servicios de terceros participan en su funcionamiento.
 
 ## 1. Información que recopilamos
 
