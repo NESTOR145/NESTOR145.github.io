@@ -36,7 +36,31 @@
         }
         .canal h3 { margin-top: 0; color: #1a2530; }
         a { color: #1a5fb4; }
+        .related-docs {
+            margin-top: 2.5em;
+            padding: 18px 22px;
+            background: #fafbfc;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .related-docs p {
+            margin: 0 0 6px;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .related-docs p:last-child { margin-bottom: 0; }
+        .related-docs a {
+            color: #1a5fb4;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .related-docs a:hover { text-decoration: underline; }
+        .related-docs .sep { margin: 0 10px; color: #ccc; }
         footer { margin-top: 3em; border-top: 1px solid #ddd; padding-top: 1em; color: #666; font-size: 0.9em; }
+        @media (max-width: 600px) {
+            .related-docs .sep { display: block; margin: 6px 0; font-size: 0; }
+        }
     </style>
 </head>
 <body>
@@ -160,6 +184,15 @@
 <h2>14. Contacto</h2>
 <p>Si tienes preguntas, comentarios o sugerencias acerca de esta Política de Privacidad, puedes comunicarte con nosotros mediante el siguiente correo electrónico:</p>
 <p><strong>einelcastillo@gmail.com</strong></p>
+
+<div class="related-docs">
+    <p><strong>Documentos relacionados</strong></p>
+    <p>
+        <a href="https://nestor145.github.io/terminos.html" target="_blank" rel="noopener">Términos del Servicio</a>
+        <span class="sep">·</span>
+        <a href="https://nestor145.github.io/reembolso.html" target="_blank" rel="noopener">Política de Reembolso</a>
+    </p>
+</div>
 
 <footer>
     <p>&copy; 2026 DominiTV — Néstor Antonio Báez Casado. Todos los derechos reservados.</p>
