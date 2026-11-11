@@ -16,7 +16,7 @@
         }
         h1 { color: #1a2530; border-bottom: 3px solid #2c3e50; padding-bottom: 12px; }
         h2 { color: #2c3e50; margin-top: 2em; }
-        h3 { color: #2c3e50; margin-top: 1.6em; margin-bottom: 6px; }
+        h3 { color: #2c3e50; margin-top: 1.6em; margin-bottom: 6px; font-size: 1.1em; }
         ul { padding-left: 1.4em; }
         li { margin-bottom: 8px; }
         .fecha { color: #666; font-style: italic; }
@@ -27,6 +27,14 @@
             margin: 22px 0;
             border-radius: 4px;
         }
+        .canal {
+            background: #fafbfc;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 18px 22px;
+            margin: 18px 0;
+        }
+        .canal h3 { margin-top: 0; color: #1a2530; }
         a { color: #1a5fb4; }
         footer { margin-top: 3em; border-top: 1px solid #ddd; padding-top: 1em; color: #666; font-size: 0.9em; }
     </style>
@@ -39,9 +47,8 @@
 <p>Gracias por utilizar <strong>DominiTV</strong> (en adelante, "la aplicación"). La privacidad de nuestros usuarios es importante para nosotros. Esta Política de Privacidad explica qué información puede recopilar la aplicación, cómo se utiliza y qué servicios de terceros participan en su funcionamiento.</p>
 
 <h2>1. Información que recopilamos</h2>
-<p>DominiTV no solicita ni recopila directamente información personal, como nombre, dirección, correo electrónico, número telefónico o documentos de identidad.</p>
-<p>Sin embargo, utilizamos servicios proporcionados por terceros que pueden recopilar determinada información de forma automática para ofrecer sus servicios correctamente.</p>
-<p>Esta información puede incluir:</p>
+<p>El uso básico de DominiTV (visualización de canales, búsqueda, favoritos) <strong>no requiere que proporciones datos personales</strong> como nombre, dirección, correo electrónico, número telefónico o documentos de identidad.</p>
+<p>Sin embargo, cuando contratas una suscripción de pago o utilizas los servicios de terceros integrados en la aplicación, determinada información puede ser recopilada de forma automática o compartida con nosotros por dichos proveedores, con el fin de prestar el servicio correctamente. Esta información puede incluir:</p>
 <ul>
     <li>Identificadores del dispositivo.</li>
     <li>Dirección IP.</li>
@@ -52,6 +59,7 @@
     <li>Datos de diagnóstico y fallos (crash reports).</li>
     <li>Información aproximada de ubicación obtenida mediante la dirección IP.</li>
     <li>Información relacionada con la interacción con los anuncios.</li>
+    <li>Datos de compra y suscripción (nombre, correo electrónico, país, número de orden) compartidos por el procesador de pagos correspondiente.</li>
 </ul>
 
 <h2>2. Publicidad</h2>
@@ -70,18 +78,29 @@
 <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
 
 <h2>3. Pagos y suscripciones</h2>
-<p>Las compras de suscripciones de <strong>DominiTV Premium</strong> son procesadas por <strong>Lemon Squeezy</strong> (operado por Link, LLC), quien actúa como comerciante de registro (<em>Merchant of Record</em>) de todas las compras realizadas a través de nuestra tienda en línea.</p>
-<p>Al realizar una compra, Lemon Squeezy recopila y procesa los datos necesarios para completar el pago, emitir la factura, gestionar la suscripción y atender reembolsos, cancelaciones o disputas. Estos datos pueden incluir:</p>
+<p>Las compras de suscripciones de <strong>DominiTV Premium</strong> pueden realizarse a través de dos canales distintos, y cada uno tiene su propio procesador de pagos. En ambos casos, DominiTV no almacena directamente datos financieros sensibles ni información completa de tarjetas de crédito o débito.</p>
+
+<div class="canal">
+<h3>3.1. Compras realizadas a través de Google Play</h3>
+<p>Cuando adquieres una suscripción dentro de la aplicación Android, el pago es procesado por <strong>Google Play Billing</strong>. Google recopila y procesa los datos necesarios para completar la transacción y nos comparte únicamente la información mínima necesaria para validar la compra y entregar la licencia de acceso (por ejemplo, el identificador de la transacción y el estado de la suscripción).</p>
+<p>Los datos de pago (tarjeta, método de pago) son gestionados directamente por Google y <strong>nunca pasan por nuestros servidores</strong>.</p>
+<p>Puedes consultar la Política de Privacidad de Google en: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+</div>
+
+<div class="canal">
+<h3>3.2. Compras realizadas a través de nuestro sitio web (Lemon Squeezy)</h3>
+<p>Cuando adquieres una suscripción a través de nuestro sitio web <a href="https://promo.dominitvlive.com" target="_blank" rel="noopener">promo.dominitvlive.com</a>, el pago es procesado por <strong>Lemon Squeezy</strong> (operado por Link, LLC), quien actúa como <strong>comerciante de registro (Merchant of Record)</strong>.</p>
+<p>Lemon Squeezy recopila y procesa los datos necesarios para completar el pago, emitir la factura, gestionar la suscripción y atender reembolsos, cancelaciones o disputas. Estos datos pueden incluir:</p>
 <ul>
     <li>Nombre y apellidos.</li>
     <li>Dirección de correo electrónico.</li>
     <li>Dirección de facturación y país de residencia.</li>
-    <li>Información del método de pago (procesada directamente por el proveedor de pagos; nosotros no almacenamos datos de tarjetas de crédito ni débito).</li>
+    <li>Información del método de pago (procesada directamente por el proveedor de pagos; nosotros no almacenamos datos de tarjetas).</li>
     <li>Número de orden y estado de la suscripción.</li>
 </ul>
-<p>Lemon Squeezy puede compartir con nosotros únicamente la información necesaria para entregarte la licencia o código de acceso del servicio y brindarte soporte relacionado con tu compra. <strong>DominiTV no almacena datos financieros sensibles</strong> ni información completa de tarjetas de pago.</p>
-<p>Puedes consultar la Política de Privacidad de Lemon Squeezy en:</p>
-<p><a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">https://www.lemonsqueezy.com/privacy</a></p>
+<p>Lemon Squeezy puede compartir con nosotros únicamente la información necesaria para entregarte la licencia o código de acceso y brindarte soporte relacionado con tu compra.</p>
+<p>Puedes consultar la Política de Privacidad de Lemon Squeezy en: <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">https://www.lemonsqueezy.com/privacy</a></p>
+</div>
 
 <h2>4. Licencias de acceso y almacenamiento local</h2>
 <p>Para recordar tu sesión y evitar que tengas que ingresar tu código de acceso cada vez que abras la aplicación, DominiTV guarda un <strong>token de licencia</strong> en el almacenamiento local (<em>localStorage</em>) de tu navegador o dispositivo.</p>
@@ -112,19 +131,33 @@
 <p>Tomamos medidas razonables para proteger la información utilizada por la aplicación, incluyendo el uso de conexiones cifradas (HTTPS) para la validación de licencias y la comunicación con nuestros servidores.</p>
 <p>Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico puede garantizar una seguridad absoluta.</p>
 
-<h2>9. Privacidad de menores</h2>
+<h2>9. Conservación de los datos</h2>
+<p>Los datos de compra y suscripción (correo electrónico, número de orden, estado de la licencia) se conservan mientras tu suscripción esté activa y durante el tiempo necesario para cumplir con obligaciones legales, fiscales o de soporte. Una vez que solicitas la eliminación de tu cuenta y no exista obligación legal de conservarlos, procederemos a su supresión en un plazo razonable.</p>
+
+<h2>10. Derechos del usuario</h2>
+<p>Como usuario, tienes derecho a:</p>
+<ul>
+    <li><strong>Acceder</strong> a la información personal que podamos tener sobre ti.</li>
+    <li><strong>Rectificar</strong> datos inexactos o incompletos.</li>
+    <li><strong>Solicitar la eliminación</strong> de tus datos, cuando no exista una obligación legal de conservarlos.</li>
+    <li><strong>Oponerte</strong> al tratamiento de tus datos para fines de marketing o publicidad personalizada.</li>
+    <li><strong>Retirar tu consentimiento</strong> en cualquier momento, cuando el tratamiento se base en él.</li>
+</ul>
+<p>Para ejercer cualquiera de estos derechos, escríbenos a <strong>einelcastillo@gmail.com</strong> indicando tu solicitud. Responderemos en un plazo razonable conforme a la legislación aplicable.</p>
+
+<h2>11. Privacidad de menores</h2>
 <p>La aplicación no está dirigida a menores de 13 años.</p>
 <p>No recopilamos intencionalmente información personal de menores. Si un padre, madre o tutor considera que un menor ha proporcionado información personal, puede comunicarse con nosotros para que tomemos las medidas correspondientes.</p>
 
-<h2>10. Cambios en esta Política de Privacidad</h2>
+<h2>12. Cambios en esta Política de Privacidad</h2>
 <p>Podremos actualizar esta Política de Privacidad ocasionalmente.</p>
 <p>Cualquier modificación será publicada en esta misma página indicando la fecha de la última actualización.</p>
 <p>El uso continuado de la aplicación después de dichos cambios implica la aceptación de la política actualizada.</p>
 
-<h2>11. Términos del Servicio</h2>
-<p>El uso de la aplicación también se rige por nuestros Términos del Servicio, disponibles en: <a href="https://nestor145.github.io/terminos.html" target="_blank" rel="noopener">https://nestor145.github.io/terminos.html</a>, que forman parte integrante del acuerdo con el usuario.</p>
+<h2>13. Términos del Servicio y Política de Reembolso</h2>
+<p>El uso de la aplicación también se rige por nuestros <a href="https://nestor145.github.io/terminos.html" target="_blank" rel="noopener">Términos del Servicio</a> y nuestra <a href="https://nestor145.github.io/reembolso.html" target="_blank" rel="noopener">Política de Reembolso</a>, que forman parte integrante del acuerdo con el usuario.</p>
 
-<h2>12. Contacto</h2>
+<h2>14. Contacto</h2>
 <p>Si tienes preguntas, comentarios o sugerencias acerca de esta Política de Privacidad, puedes comunicarte con nosotros mediante el siguiente correo electrónico:</p>
 <p><strong>einelcastillo@gmail.com</strong></p>
 
