@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu compra! · DominiTV</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: #15151f;
+            border: 1px solid #2a2a3a;
+            border-radius: 16px;
+            max-width: 560px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .logo { font-size: 3em; margin-bottom: 16px; }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 12px;
+            color: #ffd700;
+        }
+        p { color: #b0b0c0; line-height: 1.6; margin-bottom: 20px; }
+        .license-box {
+            background: #0a0a0f;
+            border: 2px dashed #ffd700;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 24px 0;
+            font-family: "Courier New", monospace;
+            font-size: 1.1em;
+            word-break: break-all;
+            color: #ffd700;
+            letter-spacing: 1px;
+        }
+        .btn {
+            background: #ffd700;
+            color: #0a0a0f;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin: 8px 4px;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-secondary {
+            background: transparent;
+            color: #ffd700;
+            border: 2px solid #ffd700;
+        }
+        .steps {
+            text-align: left;
+            background: #0a0a0f;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .steps h3 { color: #fff; margin-bottom: 12px; font-size: 1em; }
+        .steps ol { padding-left: 20px; color: #b0b0c0; line-height: 1.8; }
+        .steps a { color: #ffd700; }
+        .footer { margin-top: 30px; font-size: 0.85em; color: #666; }
+        .success { color: #4ade80; font-size: 1.2em; margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">📺</div>
+        <div class="success">✅ ¡Pago completado!</div>
+        <h1>Bienvenido a DominiTV Premium</h1>
+        <p>Tu licencia ha sido generada con éxito. Guárdala en un lugar seguro.</p>
+
+        <div class="license-box" id="licenseBox">Cargando licencia...</div>
+
+        <button class="btn" onclick="copyLicense()">📋 Copiar licencia</button>
+
+        <div class="steps">
+            <h3>🎬 Cómo activar tu cuenta</h3>
+            <ol>
+                <li>Descarga la app DominiTV si aún no la tienes: <a href="https://github.com/NESTOR145/dominitv-app/releases/latest" target="_blank">Descargar app</a></li>
+                <li>Abre la app e ingresa tu licencia cuando te la pida</li>
+                <li>¡Listo! Ya puedes ver todos los canales</li>
+            </ol>
+        </div>
+
+        <p style="font-size: 0.9em;">¿No ves tu licencia arriba? Revisa tu email — también te la enviamos allí.</p>
+
+        <div class="footer">
+            <p>© 2025 DominiTV · <a href="/terminos.html" style="color: #888;">Términos</a> · <a href="/privacidad.html" style="color: #888;">Privacidad</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Extraer la licencia de la URL
+        const params = new URLSearchParams(window.location.search);
+        const license = params.get('license_key') || params.get('license') || '';
+        const box = document.getElementById('licenseBox');
+
+        if (license) {
+            box.textContent = license;
+        } else {
+            box.textContent = '⚠️ No se recibió licencia. Revisa tu email.';
+            box.style.color = '#ff6b6b';
+            box.style.borderColor = '#ff6b6b';
+        }
+
+        function copyLicense() {
+            if (!license) {
+                alert('No hay licencia para copiar. Revisa tu email.');
+                return;
+            }
+            navigator.clipboard.writeText(license).then(() => {
+                alert('✅ Licencia copiada al portapapeles');
+            }).catch(() => {
+                // Fallback para navegadores viejos
+                const ta = document.createElement('textarea');
+                ta.value = license;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                alert('✅ Licencia copiada');
+            });
+        }
+    </script>
+</body>
+</html>
