@@ -27,11 +27,7 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.5);
         }
         .logo { font-size: 3em; margin-bottom: 16px; }
-        h1 {
-            font-size: 1.8em;
-            margin-bottom: 12px;
-            color: #ffd700;
-        }
+        h1 { font-size: 1.8em; margin-bottom: 12px; color: #ffd700; }
         p { color: #b0b0c0; line-height: 1.6; margin-bottom: 20px; }
         .license-box {
             background: #0a0a0f;
@@ -56,8 +52,22 @@
             cursor: pointer;
             transition: transform 0.2s;
             margin: 8px 4px;
+            display: inline-block;
+            text-decoration: none;
         }
         .btn:hover { transform: translateY(-2px); }
+        .btn-download {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
+            font-size: 1.1em;
+            padding: 16px 32px;
+            margin: 16px 0;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3); }
+            50% { box-shadow: 0 4px 30px rgba(255, 215, 0, 0.6); }
+        }
         .btn-secondary {
             background: transparent;
             color: #ffd700;
@@ -75,6 +85,21 @@
         .steps a { color: #ffd700; }
         .footer { margin-top: 30px; font-size: 0.85em; color: #666; }
         .success { color: #4ade80; font-size: 1.2em; margin-bottom: 8px; }
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 24px 0;
+            color: #666;
+            font-size: 0.85em;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #2a2a3a;
+        }
+        .divider::before { margin-right: 12px; }
+        .divider::after { margin-left: 12px; }
     </style>
 </head>
 <body>
@@ -86,13 +111,23 @@
 
         <div class="license-box" id="licenseBox">Cargando licencia...</div>
 
-        <button class="btn" onclick="copyLicense()">📋 Copiar licencia</button>
+        <button class="btn btn-secondary" onclick="copyLicense()">📋 Copiar licencia</button>
+
+        <div class="divider">AHORA DESCARGA LA APP</div>
+
+        <a href="https://github.com/NESTOR145/tvdominicana/releases/latest/download/DominiTV.apk" 
+           class="btn btn-download" 
+           id="downloadBtn">
+            ⬇️ Descargar DominiTV (APK)
+        </a>
 
         <div class="steps">
             <h3>🎬 Cómo activar tu cuenta</h3>
             <ol>
-                <li>Descarga la app DominiTV si aún no la tienes: <a href="https://github.com/NESTOR145/dominitv-app/releases/latest" target="_blank">Descargar app</a></li>
-                <li>Abre la app e ingresa tu licencia cuando te la pida</li>
+                <li><strong>Copia tu licencia</strong> de arriba</li>
+                <li><strong>Descarga la app</strong> con el botón de arriba</li>
+                <li>Instala el APK (si Android te avisa, acepta la instalación de origen desconocido)</li>
+                <li>Abre la app e <strong>ingresa tu licencia</strong> cuando te la pida</li>
                 <li>¡Listo! Ya puedes ver todos los canales</li>
             </ol>
         </div>
@@ -105,7 +140,6 @@
     </div>
 
     <script>
-        // Extraer la licencia de la URL
         const params = new URLSearchParams(window.location.search);
         const license = params.get('license_key') || params.get('license') || '';
         const box = document.getElementById('licenseBox');
@@ -126,7 +160,6 @@
             navigator.clipboard.writeText(license).then(() => {
                 alert('✅ Licencia copiada al portapapeles');
             }).catch(() => {
-                // Fallback para navegadores viejos
                 const ta = document.createElement('textarea');
                 ta.value = license;
                 document.body.appendChild(ta);
