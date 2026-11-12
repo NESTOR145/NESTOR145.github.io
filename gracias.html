@@ -100,6 +100,16 @@
         }
         .divider::before { margin-right: 12px; }
         .divider::after { margin-left: 12px; }
+        .warn {
+            background: rgba(255, 107, 107, 0.1);
+            border-left: 3px solid #ff6b6b;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            color: #ff9999;
+            text-align: left;
+            margin: 16px 0;
+        }
     </style>
 </head>
 <body>
@@ -115,10 +125,10 @@
 
         <div class="divider">AHORA DESCARGA LA APP</div>
 
-        <a href="https://github.com/NESTOR145/tvdominicana/releases/latest/download/DominiTV.apk" 
-           class="btn btn-download" 
+        <a href="https://github.com/NESTOR145/tvdominicana/releases/latest/download/DominiTV_setup.exe"
+           class="btn btn-download"
            id="downloadBtn">
-            ⬇️ Descargar DominiTV (APK)
+            ⬇️ Descargar DominiTV para Windows
         </a>
 
         <div class="steps">
@@ -126,10 +136,14 @@
             <ol>
                 <li><strong>Copia tu licencia</strong> de arriba</li>
                 <li><strong>Descarga la app</strong> con el botón de arriba</li>
-                <li>Instala el APK (si Android te avisa, acepta la instalación de origen desconocido)</li>
-                <li>Abre la app e <strong>ingresa tu licencia</strong> cuando te la pida</li>
-                <li>¡Listo! Ya puedes ver todos los canales</li>
+                <li>Ejecuta el instalador <code>DominiTV_setup.exe</code> y sigue los pasos</li>
+                <li>Abre la app DominiTV e <strong>ingresa tu licencia</strong></li>
+                <li>¡Listo! Ya puedes ver todos los canales con VLC</li>
             </ol>
+        </div>
+
+        <div class="warn">
+            ⚠️ <strong>Windows puede mostrar un aviso "Windows protegió tu PC"</strong> al ejecutar el instalador. Es normal en apps nuevas sin firma digital. Pulsa <strong>"Más información"</strong> → <strong>"Ejecutar de todas formas"</strong>.
         </div>
 
         <p style="font-size: 0.9em;">¿No ves tu licencia arriba? Revisa tu email — también te la enviamos allí.</p>
