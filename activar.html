@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende cómo activar tu cuenta de DominiTV Premium en Windows. Descarga la app, instala VLC y pega tu clave de acceso.">
+    <title>Cómo activar DominiTV · DominiTV</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: #15151f;
+            border: 1px solid #2a2a3a;
+            border-radius: 16px;
+            max-width: 560px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .logo { font-size: 3em; margin-bottom: 16px; }
+        h1 { font-size: 1.8em; margin-bottom: 12px; color: #ffd700; }
+        p { color: #b0b0c0; line-height: 1.6; margin-bottom: 20px; }
+        .btn {
+            background: #ffd700;
+            color: #0a0a0f;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin: 8px 4px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-download {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
+            font-size: 1.1em;
+            padding: 16px 32px;
+            margin: 16px 0;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3); }
+            50% { box-shadow: 0 4px 30px rgba(255, 215, 0, 0.6); }
+        }
+        .steps {
+            text-align: left;
+            background: #0a0a0f;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 24px 0;
+        }
+        .steps h3 { color: #fff; margin-bottom: 12px; font-size: 1em; }
+        .steps ol { padding-left: 20px; color: #b0b0c0; line-height: 1.8; }
+        .steps a { color: #ffd700; }
+        .steps code {
+            background: #1c1c26;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #ffd700;
+        }
+        .footer { margin-top: 30px; font-size: 0.85em; color: #666; }
+        .footer a { color: #888; }
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 24px 0;
+            color: #666;
+            font-size: 0.85em;
+        }
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #2a2a3a;
+        }
+        .divider::before { margin-right: 12px; }
+        .divider::after { margin-left: 12px; }
+        .warn {
+            background: rgba(255, 107, 107, 0.1);
+            border-left: 3px solid #ff6b6b;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            color: #ff9999;
+            text-align: left;
+            margin: 16px 0;
+        }
+        .note {
+            background: rgba(255, 215, 0, 0.08);
+            border-left: 3px solid #ffd700;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 0.85em;
+            color: #ffe680;
+            text-align: left;
+            margin: 16px 0;
+        }
+        .note strong { color: #ffd700; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="logo">📺</div>
+        <h1>Activa tu DominiTV Premium</h1>
+        <p>Ya tienes tu clave de acceso (te la enviamos por correo o WhatsApp). Sigue estos pasos para empezar a ver tus canales.</p>
+
+        <div class="note">
+            🔑 <strong>Tu clave de acceso</strong> llegó a tu correo electrónico o WhatsApp. Si no la encuentras, contáctanos.
+        </div>
+
+        <div class="divider">PASO 1 · DESCARGA LA APP</div>
+
+        <a href="https://github.com/NESTOR145/tvdominicana/releases/latest/download/DominiTV_setup.exe"
+           class="btn btn-download"
+           id="downloadBtn">
+            ⬇️ Descargar DominiTV para Windows
+        </a>
+
+        <div class="warn">
+            ⚠️ <strong>Windows puede mostrar un aviso "Windows protegió tu PC"</strong> al ejecutar el instalador. Es normal en apps nuevas sin firma digital. Pulsa <strong>"Más información"</strong> → <strong>"Ejecutar de todas formas"</strong>.
+        </div>
+
+        <div class="divider">PASO 2 · INSTALA Y ACTIVA</div>
+
+        <div class="steps">
+            <h3>🎬 Cómo activar tu cuenta</h3>
+            <ol>
+                <li><strong>Ejecuta el instalador</strong> <code>DominiTV_setup.exe</code> y sigue los pasos.</li>
+                <li><strong>Abre la app DominiTV</strong> desde el menú de inicio o el escritorio.</li>
+                <li>En la pantalla de acceso, haz clic en la pestaña <strong>"Tengo una clave"</strong>.</li>
+                <li><strong>Pega tu clave de acceso</strong> (la que recibiste por correo o WhatsApp).</li>
+                <li>Pulsa <strong>"Validar"</strong>. ¡Listo! Ya puedes ver todos los canales.</li>
+            </ol>
+        </div>
+
+        <div class="note">
+            💡 <strong>Importante:</strong> necesitas tener <strong>VLC Media Player</strong> instalado en tu PC para reproducir los canales. Descárgalo gratis en <a href="https://www.videolan.org/vlc/" target="_blank" style="color:#ffd700;">videolan.org/vlc</a> si aún no lo tienes.
+        </div>
+
+        <div class="steps">
+            <h3>❓ ¿Problemas para activar?</h3>
+            <ol>
+                <li>Verifica que copiaste la clave <strong>completa</strong>, sin espacios al inicio ni al final.</li>
+                <li>Recuerda que tu clave funciona en <strong>máximo 2 dispositivos</strong>.</li>
+                <li>Si la clave ya está en uso en 2 dispositivos, contáctanos para liberarla.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 DominiTV · <a href="/terminos.html">Términos</a> · <a href="/privacidad.html">Privacidad</a></p>
+        </div>
+    </div>
+</body>
+</html>
