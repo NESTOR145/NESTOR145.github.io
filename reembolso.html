@@ -184,7 +184,7 @@
             <span class="page-tag">Documento Legal</span>
             <h1>Política de Reembolso</h1>
             <p class="subtitle">Compras en Google Play y compras coordinadas para Windows</p>
-            <p class="updated">Última actualización: 18 de noviembre de 2026</p>
+            <p class="updated">Última actualización: 22 de noviembre de 2026</p>
         </header>
 
         <p>
@@ -318,10 +318,25 @@
 
         <h2>6. Reembolsos y licencias de acceso</h2>
         <p>
-            Cuando se aprueba un reembolso, la <strong>licencia o código de acceso</strong> asociado a esa compra será
-            <strong>revocado automáticamente</strong> en nuestra base de datos (Firebase Firestore), por lo que el
-            usuario perderá acceso a los canales y funciones premium del servicio. En caso de haber recibido un código
-            promocional o descuento, el reembolso se calculará sobre el monto efectivamente pagado.
+            Cuando se aprueba un reembolso, el usuario <strong>perderá acceso automáticamente</strong> a los canales
+            y funciones premium del servicio, según el canal de compra:
+        </p>
+        <ul>
+            <li>
+                <strong>Compras de Android (Google Play):</strong> Google Play invalidará la transacción, y la app
+                detectará automáticamente la ausencia de una suscripción activa, desactivando el acceso premium en el
+                dispositivo. El registro técnico de vinculación del dispositivo permanecerá almacenado en Firebase
+                Firestore como referencia histórica, sin afectar el acceso del usuario al servicio.
+            </li>
+            <li>
+                <strong>Compras de Windows:</strong> la clave de activación asociada será revocada manualmente por
+                nuestro equipo en la base de datos (Firebase Firestore), desactivando el acceso en el dispositivo
+                correspondiente.
+            </li>
+        </ul>
+        <p>
+            En caso de haber recibido un código promocional o descuento, el reembolso se calculará sobre el monto
+            efectivamente pagado.
         </p>
 
         <h2>7. Disputas y resolución de conflictos</h2>
